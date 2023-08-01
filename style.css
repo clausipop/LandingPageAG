@@ -1,0 +1,467 @@
+:root {
+    --azul-fuerte: #004272;
+    --azul-oscuro: #001f38;
+    --naranja-claro: #f19800;
+    --transition-duration: 0.7s
+}
+/* Fuentes */
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy-FREE/Gilroy-ExtraBold.otf) format('otf'), url(assets/fonts/Gilroy-FREE/Gilroy-Light.otf) format('otf');
+}
+@font-face {
+    font-family: 'AL_LePORSCHE_PersonalUseOnly';
+    src: url('fonts/leporsche/AL_LePORSCHE_PersonalUseOnly.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Nexa-Heavy';
+    src: url('fonts/nexa/Nexa-Heavy.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Nexa-ExtraLight';
+    src: url('fonts/nexa/Nexa-ExtraLight.ttf') format('truetype');
+}
+
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font-family: 'Nexa-Heavy', Times, serif; */
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+body{
+    background-image: url("imagenes/background-blue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	  font-weight: 400;
+	  line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* main{
+    margin-top: 50px;
+    width: 100%;
+} */
+
+.navbar{
+padding: 0%;    
+}
+ /* .navbar-brand{
+    margin: 0%;
+ } */
+
+ .navbar img {
+    width: 30%;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 50px;
+
+  }
+ .navbar img:hover{
+    transform: scale(1.2);
+  }
+
+.navbar li:hover{
+  transition: all 0.4s;
+  transform: scale(1.2);
+}
+
+.navbar a{
+    color: antiquewhite;
+}
+
+.custom-icon{
+    color: white;
+}
+
+.navbar-nav .nav-link p {
+    font-size: 50px;
+  }
+
+
+.navbar img {
+    width: 130px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+.navbar img:hover{
+    transform: scale(1.2);
+  }
+
+.navbar-iso img{
+    width: 80px;
+    cursor: pointer;
+  }
+.navbar-iso img:hover{
+    transform: scale(1.2);
+  }
+
+.navbar ul{
+    align-items: end;
+    
+}
+  
+.navbar  {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /* font-weight: 70%; */
+    letter-spacing: 2px;
+    word-spacing: 50px;
+  }
+
+ .navbar .nav-item{
+    padding-right: 20px;
+ } 
+  
+.navbar img {
+    max-height: 120px;
+    display: block;
+    margin-right: auto;
+  }
+
+
+/* Seccion de inicio */
+
+.container-fluid .left-text .form{
+    margin-top: 100px;
+
+}
+
+.left-text{
+    margin-top: 100px;
+}
+  .left-text h1{
+    text-align: start;
+    font-family: 'AL_LePORSCHE_PersonalUseOnly' ;
+    font-size: 70px;
+    margin-left: 50px;
+
+  }
+
+  @media (max-width: 768px)  {
+    .left-text h1{
+        text-align: center;
+        font-family: 'AL_LePORSCHE_PersonalUseOnly' ;
+        font-size: 35PX;
+    }
+  }
+
+  @media (max-width: 768px)  {
+    .left-text form{
+        text-align: center;
+        font-family: 'AL_LePORSCHE_PersonalUseOnly' ;
+        font-size: 35PX;
+    }
+  }
+  @media (max-width: 768px)  {
+    .left-text h1{
+        text-align: center;
+        font-family: 'AL_LePORSCHE_PersonalUseOnly' ;
+        font-size: 30PX;
+    }
+  }
+
+
+  .text-quote h3{
+   text-align: center;
+    font-family: 'Nexa-ExtraLight' ;
+  }
+
+  .form{
+    background-color: rgba(222, 222, 222, 0.3);
+    border-radius: 35px;
+    padding: 10px;
+    /* width: 400px; */
+  }
+
+  .form h3{
+    text-align: center;
+    font-family: 'AL_LePORSCHE_PersonalUseOnly' ;
+    margin-top: 8%;
+
+  }
+
+  .form label{
+    /* margin-left: 70px; */
+    text-transform: uppercase;
+    font-family: 'AL_LePORSCHE_PersonalUseOnly' ;
+    font-size: 15px;
+  }
+
+  .form input{
+    background-color: rgba(222, 222, 222, 0.3);
+    border-radius: 40px;
+    border: none;
+    max-width: 80%;
+    margin-left: 50px;
+  }
+  :-ms-input-placeholder{
+    color: #ef6b48;
+  }
+
+  .form button{
+    margin-top: 10px;
+    background-color: #ef6b48;
+    text-align: center;
+    font-family: 'AL_LePORSCHE_PersonalUseOnly' ;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+
+  .form button:hover{
+    background-color: var(--azul-oscuro);
+    transition: 0.1s;
+  }
+/* Seccion blanca */  
+
+.info-why{
+    margin-top: 10%;
+    width: 100%;
+}
+
+.info-why h1{
+    padding-top: 5%;
+    color: #28545b;
+    font-family: 'AL_LePORSCHE_PersonalUseOnly';
+    text-align: center;
+    font-size: 80px;
+}
+
+@media (max-width: 768px)  {
+  .info-why h1{
+      text-align: center;
+      font-family: 'AL_LePORSCHE_PersonalUseOnly' ;
+      font-size: 50px;
+  }
+}
+
+/* .info-why img{
+    width: 30%;
+    text-align: center;
+    margin: 30px;
+    color: #28545b;
+} */
+
+.info-why p{
+    color: #ffffff;
+    font-family: 'Nexa-Heavy';
+    margin: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+}
+
+.info-why .servicios-1{
+  background-image: url("imagenes/magicpattern-mesh-gradient-1686867499802.png");
+ /*  background: linear-gradient(45deg,#DCF1ED, #6AA6B0, #9FB2B4 ); */
+    border-radius: 10%;
+    min-height: 160px;
+    border: none;
+/*     box-shadow: 0 0 15px #757272;
+ */}
+.info-why .servicios-2{
+  background-image: url("imagenes/fondo-2.png");
+ /*  background: linear-gradient(45deg,#DCF1ED, #6AA6B0, #9FB2B4 ); */
+    border-radius: 10%;
+    min-height: 160px;
+    border: none;
+/*     box-shadow: 0 0 15px #757272;
+ */}
+.info-why .servicios-3{
+  background-image: url("imagenes/fondo-3.png");
+ /*  background: linear-gradient(45deg,#DCF1ED, #6AA6B0, #9FB2B4 ); */
+    border-radius: 10%;
+    min-height: 160px;
+    border: none;
+/*     box-shadow: 0 0 15px #757272;
+ */}
+
+/*  # Footer */
+
+    #footer {
+        font-size: 14px;
+        background: #96a8aa;
+        font-family: 'Nexa-Heavy';
+
+    }
+
+        #footer .footer-top {
+            padding: 60px 0 30px 0;
+            background: #fff;
+        }
+
+            #footer .footer-top .footer-contact {
+                margin-bottom: 30px;
+            }
+              .footer-contact h2{
+              font-family: 'AL_LePORSCHE_PersonalUseOnly';
+              color:#28545b;
+
+            }
+
+                #footer .footer-contact {
+                  margin-top: 8%;
+                }
+
+                #footer .footer-top .footer-contact h3 {
+                    font-size: 28px;
+                    margin: 0 0 10px 0;
+                    padding: 2px 0 2px 0;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: #37517e;
+                }
+
+                #footer .footer-contact p {
+                    font-size:20px;
+                    line-height: 24px;
+                    margin-bottom: 0;
+                    font-family: 'Nexa-Heavy';
+                    color: #5e5e5e;
+                }
+
+            #footer .footer-top h4 {
+                font-size: 16px;
+                font-weight: bold;
+                color: #37517e;
+                position: relative;
+                padding-bottom: 12px;
+            }
+
+            #footer .footer-links {
+                margin-bottom: 30px;
+                margin-top: 8%;
+                
+            }
+
+            .footer-links h5{
+              font-family: 'AL_LePORSCHE_PersonalUseOnly';
+              color:#28545b;
+            }
+
+                    .footer-links a{
+                    color: #ffffff
+                }
+
+                    .footer-links a:hover{
+                    color: #28545b;
+                    transition: 0.4s;
+                }
+
+                    .footer-links ul li{
+                    list-style: none;
+                    text-decoration: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                    .footer-links ul li a{
+                    text-decoration: none;
+                }
+
+                    #footer .footer-top .footer-links ul i {
+                        padding-right: 2px;
+                        color: #47b2e4;
+                        font-size: 18px;
+                        line-height: 1;
+                    }
+
+                    #footer .footer-top .footer-links ul li {
+                        padding: 10px 0;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                        #footer .footer-top .footer-links ul li:first-child {
+                            padding-top: 0;
+                        }
+
+                    #footer .footer-top .footer-links ul a {
+                        color: #777777;
+                        transition: 0.3s;
+                        display: inline-block;
+                        line-height: 1;
+                    }
+
+                        #footer .footer-top .footer-links ul a:hover {
+                            text-decoration: none;
+                            color: #47b2e4;
+                        }
+
+            #footer .social-links a {
+                font-size: 18px;
+                display: inline-block;
+                background: #ffffff;
+                color: #001f38;
+                line-height: 1;
+                padding: 8px 0;
+                margin-right: 4px;
+                border-radius: 50%;
+                text-align: center;
+                width: 36px;
+                height: 36px;
+                transition: 0.3s;
+            }
+            .social-links i {
+                font-size: 18px;
+                display: inline-block;
+                color: #001f38;
+                line-height: 1;
+                padding: 8px 0;
+                margin-right: 4px;
+                border-radius: 50%;
+                text-align: center;
+                width: 36px;
+                height: 36px;
+                transition: 0.3s;
+            }
+
+                #footer .footer-top .social-links a:hover {
+                    background: #209dd8;
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+        #footer .footer-bottom {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: #fff;
+        }
+
+        #footer .copyright {
+            float: left;
+        }
+
+        #footer .credits {
+            float: right;
+            font-size: 13px;
+        }
+
+            #footer .credits a {
+                transition: 0.3s;
+            }
+
+    @media (max-width: 768px) {
+        #footer .footer-bottom {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #footer .copyright, #footer .credits {
+            text-align: center;
+            float: none;
+        }
+
+        #footer .credits {
+            padding-top: 4px;
+        }
+    }
